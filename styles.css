@@ -573,8 +573,6 @@ form button{
     }
 }
 
-
-
 .section {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -671,6 +669,40 @@ form button{
 .li-class12 {
     color: rgba(245, 245, 245, 0.819);
     font-size: 0.9rem;
+}
+
+
+@media (max-width:768px) {
+    .timeline-container{
+        text-align: center;
+    }
+    .logo-container img {
+        margin-top: 50px;
+        width: 120px;
+    }
+    .timeline-title{
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .section{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .card{
+        border-radius: 4px;
+    }
+    .card .image-box img{
+        height: 200px;
+    }
+    .content{
+        padding: 5px;
+    }
+    .title-h2, .p-class{
+        font-size: 0.9rem;
+    }
+    .li-class, .li-class1, .li-class12{
+        font-size: 0.8rem;
+    }
 }
 
 
