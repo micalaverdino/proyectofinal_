@@ -923,6 +923,10 @@ header {
 .main-bg {
     background: url("../img/fondo-bg-lambo.jpg");
     font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-repeat: repeat;
+    background-size: contain;
 }
 
 .div{

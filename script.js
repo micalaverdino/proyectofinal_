@@ -66,7 +66,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.querySelectorAll('.image-toggle-btn').forEach(button => {
     button.addEventListener('click', () => {
-        const img = button.nextElementSibling;
-        img.style.display = img.style.display === 'none' ? 'block' : 'none';
-    })
-})
+        const img = button.parentElement.querySelector('img.timeline-image');
+        if (img) {
+            img.style.display = img.style.display === 'none' ? 'inline-block' : 'none';
+        } else {
+            console.error("No se encontró la imagen para el botón");
+        }
+    });
+});
