@@ -921,12 +921,17 @@ header {
 /*PAGINA LAMBORGHINI*/
 
 .main-bg {
-    background: url("../img/fondo-bg-lambo.jpg");
+    background: url("../img/fondo-pag-lambo-4.jpg");
     font-family: Arial, sans-serif;
     padding: 0;
     margin: 0;
     background-repeat: repeat;
-    background-size: contain;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .div{
@@ -970,5 +975,45 @@ header {
     max-width: 500px;
     margin-top: 10px;
     display: none;
+}
+
+.timeline-h1-title{
+    color: #ffea00;
+    font-size: 2.5rem;
+    display: inline-block;
+    animation: desplazarTitle 2s infinite;
+}
+
+.timeline-h2{
+    color: #ffff51;
+
+}
+
+.timeline-p{
+    color: #000000;
+    background-color: rgba(255, 255, 157, 0.745);
+    font-size: 1.2rem;
+    padding: 2px 4px;
+    display: inline;
+    text-decoration: none;
+}
+
+.timeline-i{
+    text-decoration: solid;
+}
+
+
+.logolambo{
+    animation: girarLogo 3s infinite linear;
+    margin-bottom: 30px;
+}
+
+@keyframes desplazarTitle{
+    0%, 100%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(150px);
+    }
 }
 
