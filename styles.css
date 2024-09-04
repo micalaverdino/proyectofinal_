@@ -516,9 +516,64 @@ form button{
     padding: 0;
     box-sizing: border-box;
 }
-body{
+.audi-body{
     overflow: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
 }
+
+.timeline-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container img{
+    margin-top: 150px;
+    width: 150px;
+    animation: bounce 2s infinite; /*Animación al logo*/
+
+}
+
+.timeline-title{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: fadeIn 2s ease-in-out;
+    color: #0e0e0e;
+}
+
+/*Animación de rebote para el logo*/
+@keyframes bounce{
+    0%, 20%, 50%, 80%, 100%{
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/*Animación suave para el texto*/
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 
 .section {
     display: grid;
