@@ -60,3 +60,13 @@ document.addEventListener('DOMContentLoaded', function() {
         links.classList.toggle('show-menu');
     });
 });
+
+// PAGINA LAMBO
+// script.js
+
+document.querySelectorAll('.image-toggle-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const img = button.nextElementSibling;
+        img.style.display = img.style.display === 'none' ? 'block' : 'none';
+    })
+})

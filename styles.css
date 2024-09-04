@@ -345,95 +345,6 @@ form button{
     }
 }
 
-/*FOOTER INDEX
-
-.box h4{
-    text-align: center;
-    color: #fff;
-}
-
-.box .contenedor-redes-sociales {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.box .contenedor-redes-sociales .boton a{
-    color: #080808;
-    text-decoration: dotted;
-    font-weight: bold;
-}
-
-.contenedor-redes-sociales .boton{
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    margin: 0 5px;
-    overflow: hidden;
-    background: #fff;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0 10px 10px rgb(0, 0, 0, 0.1);
-    transition: all .3s ease-out;
-}
-
-.contenedor-redes-sociales .boton:hover{
-    width: 190px;
-}
-
-.contenedor-redes-sociales .boton .icono{
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    border-radius: 50px;
-    box-sizing:  border-box;
-    line-height: 60px;
-    text-align: center;
-    transition: all .3s ease-out;
-}
-
-.contenedor-redes-sociales .boton:nth-child(1):hover .icono{
-    background: #1e25ee;
-    color: #fff;
-}
-
-.contenedor-redes-sociales .boton:nth-child(2):hover .icono{
-    background: linear-gradient(30deg, #f737e7 10%, #d41356, #e74f31, #f0ec6c);
-    color: #fff;
-}
-
-.contenedor-redes-sociales .boton:nth-child(3):hover .icono{
-    background: #80acee;
-    color: #fff;
-}
-
-.contenedor-redes-sociales .boton:nth-child(4):hover .icono{
-    background: springgreen;
-    color: #fff;
-}
-
-.contenedor-redes-sociales .boton:nth-child(5):hover .icono{
-    background: cadetblue;
-    color: #fff;
-}
-
-.contenedor-redes-sociales .boton:nth-child(6):hover .icono{
-    background: orangered;
-    color: #fff;
-}
-
-.contenedor-redes-sociales .boton i{
-    font-size: 25px;
-    line-height: 60px;
-}
-
-.contenedor-redes-sociales .boton span{
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 60px;
-    margin-left: 10px;
-}
-*/
 /*MENU solo + fondo*/
 /*
 .menu{
@@ -1005,5 +916,55 @@ header {
     .form-box .form-content {
         padding: 30px 20px;
     }
+}
+
+/*PAGINA LAMBORGHINI*/
+
+.main-bg {
+    background: url("../img/fondo-bg-lambo.jpg");
+    font-family: Arial, sans-serif;
+}
+
+.div{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px;
+    list-style: none;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 60px;
+}
+
+.timeline-item::before{
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.image-toggle-btn {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.timeline-image{
+    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
+    display: none;
 }
 
