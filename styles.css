@@ -617,26 +617,6 @@ form button{
 }
 
 
-/*PAGINA BMW
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}*/
-
-/*
-body{
-    margin: 0;
-    padding: 0;
-    background-image: url("../img/fondo-pag-lambo4.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-    background-position: center;
-}*/
-
-
 /* Estructura General y Reseteo */
 @import url(https://fonts.google.com/specimen/Open+Sans/tester?query=open+sans&icon.style=Rounded);
 * {
@@ -648,7 +628,7 @@ body{
 body {
     width: 100%;
     height: 100vh;
-    background-image: url(../img/fondo-index2.jpg);
+    background-image: url("../img/fondo-index2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -1078,12 +1058,6 @@ header {
 
 
 /*PAGINA MERCH*/
-*{
-    margin: 0;
-    padding: 0;
-}
-
-
 .body-merch{
     background: url("../img/fondo-merch-store.jpg");
     background-repeat: no-repeat;
@@ -1109,24 +1083,31 @@ nav a:hover{
     text-decoration-color: blue;
 }
 
-.categories {
-    margin: 20px;
+
+/*JUGUETES*/
+.product-h2{
+    font-size: 2rem;
+    color: #000000;
+    text-align: center;
+    grid-column: 1 / -1;
+    padding: 20px;
 }
 
 .category-juguetes{
+    background-image: url("../img/fondo-merch-store.jpg");
+    background-size: cover;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3);
     gap: 50px;
     background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(5px);
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 12px;
     box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
-.card.product{
+.card-product{
     display: flex;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -1134,11 +1115,21 @@ nav a:hover{
     margin: auto;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 250px;
+    max-width: 375px;
     text-align: center;
     background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease;
 }
 
+.card-product:hover{
+    box-shadow: 0 8px 16px rgb(126, 255, 152);
+}
+
+.product-title{
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+}
 
 .product-image{
     width: 325px;
@@ -1149,43 +1140,241 @@ nav a:hover{
     margin-bottom: 10px;
 }
 
-.product-h2{
-    font-size: 2rem;
-    color: #fff;
-    text-align: center;
-    grid-column: 1 / -1;
-}
-
-
-.product-title{
-    font-size: 1.5rem;
-    color: #333;
-    margin: 10px 0;
-}
 
 .product-price{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #27ae60;
-    margin: 10px 0;
+    margin: 5px 0 2px;
+    padding: 5px;
 }
 
+
 .payment-methods{
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #555;
     margin: 10px 0;
+    font-weight: bold;
 }
 
 .add-to-cart-btn{
-    background-color: #f39c12;
-    color: white;
+    background-color: #12ecf3;
+    color: rgb(0, 0, 0);
     padding: 10px;
     border: none;
     border-radius: 5px;
+    border-color: #000;
     cursor: pointer;
     margin-top: 10px;
-}
-
-.add-to-cart-btn i{
     margin-right: 5px;
 }
 
+.add-to-cart-btn:hover{
+    background-color: #ae3eaa;
+}
+
+@media (max-width: 768px){
+    .category-juguetes{
+        grid-template-columns: repeat(auto-fill, minimax(150px, 1fr));
+    }
+}
+@media (max-width: 480px){
+    .category-juguetes{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*ACCESORIOS*/
+.product-h21{
+    font-size: 2rem;
+    color: #000;
+    text-align: center;
+    grid-column: 1 / -1;
+    padding: 20px;
+}
+
+.category-accesories{
+    background-image: url("../img/fondo-merch-accesorios.jpg");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3);
+    gap: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-product1{
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 375px;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease;
+}
+
+.card-product1:hover{
+    box-shadow: 0 8px 16px rgb(252, 204, 59);
+}
+
+
+.product-image-acc{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.add-to-cart-btn1{
+    background-color: #007cba;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    border-color: #000;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.add-to-cart-btn1:hover{
+    background-color: #2a695f;
+}
+
+/*ROPA*/
+.product-h22{
+    font-size: 2rem;
+    color: #000;
+    text-align: center;
+    grid-column: 1 / -1;
+    padding: 20px;
+}
+
+.category-ropa{
+    background-image: url("../img/fondo-merch-ropa.jpg");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3);
+    gap: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-product2{
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 375px;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease;
+}
+
+.card-product2:hover{
+    box-shadow: 0 8px 16px rgb(113, 113, 113);
+}
+
+.product-image-ropa{
+    width: 325px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.add-to-cart-btn2{
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    border-color: #000;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.add-to-cart-btn2:hover{
+    background-color: #8a2828a9;
+}
+/*FOOTER*/
+footer{
+    background-color: #000000;
+    padding: 50px 0;
+    margin: auto;
+    text-align: center;
+    color: white;
+    min-height: 100px;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon i{
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.tooltip{
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+}
+
+.icon:hover{
+    transform: translateY(-10px);
+    color: #000000;
+}
+
+.icon:hover .tooltip{
+    opacity: 1;
+}
+
+@media (max-width: 768px){
+    .icon{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px){
+    .icon {
+        font-size: 18px;
+    }
+}
