@@ -9,57 +9,37 @@
     
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary navv py-0">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html">
-            <img src="../img/LOGOS_PAG_WEB-removebg-preview.png" alt="Logo del sitio" class="logo-cursor" />
+  <!--Barra de navegacion-->
+  <header>
+    <nav class="navbar">
+        <span class="menu-btn material-symbols-rounded">Menú</span>
+        <a href="#" class="logo">
+            <img src="./img/LOGOS_PAG_WEB-removebg-preview.png" alt="Logo" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span><br /></button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="links">
+            <li><a href="../index.html" class="navindex"><h2>Inicio</h2></a></li>
+            <li><a href="../pags/merch.html" class="navindex"><h2>Merchandising</h2></a></li>
+            <li><a href="../pags/contacto.html" class="navindex"><h2>Contacto</h2></a></li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle navtitle" href="/pags/marcas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Marcas</a>
-                <ul class="dropdown-menu p-0">
-                    <li><a class="dropdown-item navtitle" href="./lambo.html">Lamborghini</a></li>
-                    <li><a class="dropdown-item navtitle" href="./ferrari.html">Ferrari</a></li>
-                    <li><a class="dropdown-item navtitle" href="./mb.html">Mercedes Benz</a></li>
-                    <li><a class="dropdown-item navtitle" href="./renault.html">Renault</a></li>
-                    <li><a class="dropdown-item navtitle" href="./fiat.html">Fiat</a></li>
-                    <li><a class="dropdown-item navtitle" href="./honda.html">Honda</a></li>
-                    <li><a class="dropdown-item navtitle" href="./hyundai.html">Hyudai</a></li>
-                    <li><a class="dropdown-item navtitle" href="./volvo.html">Volvo</a></li>
-                    <li><a class="dropdown-item navtitle" href="./volkswagen.html">Volkswagen</a></li>
-                    <li><a class="dropdown-item navtitle" href="./suzuki.html">Suzuki</a></li>
-                    <li><a class="dropdown-item navtitle" href="./subaru.html">Subaru</a></li>
-                    <li><a class="dropdown-item navtitle" href="./mitsu.html">Mitsubishi</a></li>
-                    <li><a class="dropdown-item navtitle" href="./ford.html">Ford</a></li>
-                    <li><a class="dropdown-item navtitle" href="./mazda.html">Mazda</a></li>
-                    <li><a class="dropdown-item navtitle" href="./bentley.html">Bentley</a></li>
-                    <li><a class="dropdown-item navtitle" href="./mclaren.html">McLaren</a></li>
-                    <li><a class="dropdown-item navtitle" href="./bmw.html">BMW</a></li>
-                    <li><a class="dropdown-item navtitle" href="./cadillac.html">Cadillac</a></li>
-                    <li><a class="dropdown-item navtitle" href="./rollroyce.html">Roll-Royce</a></li>
-                    <li><a class="dropdown-item navtitle" href="./toyota.html">Toyota</a></li>
-                    <li><a class="dropdown-item navtitle" href="./tesla.html">Tesla</a></li>
-                    <li><a class="dropdown-item navtitle" href="./bugatti.html">Bugatti</a></li>
-                    <li><a class="dropdown-item navtitle" href="./audi.html">Audi</a></li>
-                    <li><a class="dropdown-item navtitle" href="./peugeot.html">Peugeot</a></li>
+                <a href="#" class="nav-link dropdown-toggle navtitle" id="marcas-dropdown"><h2>Marcas</h2></a>
+                <ul class="dropdown-content">
+                    <li><a class="dropdown-item navtitle" href="./pags/audi.html">Audi</a></li>
+                    <li><a class="dropdown-item navtitle" href="../pags/bmw.html">BMW</a></li>
+                    <li><a class="dropdown-item navtitle" href="../pags/bugatti.html">Bugatti</a></li>
+                    <li><a class="dropdown-item navtitle" href="../pags/ferrari.html">Ferrari</a></li>
+                    <li><a class="dropdown-item navtitle" href="../pags/ford.html">Ford</a></li>
+                    <li><a class="dropdown-item navtitle" href="../pags/honda.html">Honda</a></li>
+                    <li><a class="dropdown-item navtitle" href="../pags/lambo.html">Lamborghini</a></li>
+                    <li><a class="dropdown-item navtitle" href="../pags/mb.html">Mercedes Benz</a></li>
+                    <li><a class="dropdown-item navtitle" href="../pags/peugeot.html">Peugeot</a></li>
+                    <li><a class="dropdown-item navtitle" href="../pags/toyota.html">Toyota</a></li>
+                    <li><a class="dropdown-item navtitle" href="../pags/volkswagen.html">Volkswagen</a></li>
                 </ul>
-                </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle navtitle" href="/pags/merch.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Merchandising</a>
-                <ul class="dropdown-menu p-0">
-                    <li><a class="dropdown-item navtitle" href="/Paginas/">titulo1</a></li>
-                    <li><a class="dropdown-item navtitle" href="/Paginas/">Titulo</a></li>
-                </ul>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link navtitle" href="/pags/contacto.html">Contacto</a>
-                </li>
-            </ul>
-            </div>
-        </div>
+            </li>
+        </ul>
+        <button class="login-btn">INGRESAR</button>
     </nav>
-
+</header>
     <main>
         <img src="../img/logo-bmw-removebg-preview.png" alt="LGOO BMW">
         <div class="div">LÍNEA DE TIEMPO</div>
@@ -167,9 +147,37 @@
             </article>
     </section>
     </main>
-    
     <footer>
-
+        <div class="social-icon">
+            <a href="https://www.instagram.com/laveerdino/" class="icon">
+                <i class="fa-brands fa-instagram" style="color: #ff42e6;"></i>
+                <span class="tooltip">Instagram</span>
+            </a>
+            <a href="https://x.com/Laveerdino" class="icon">
+                <i class="fa-brands fa-twitter" style="color: #74C0FC;"></i>
+                <span class="tooltip">Twitter</span>
+            </a>
+            <a href="https://www.tiktok.com/@micalaverdino" class="icon">
+                <i class="fa-brands fa-tiktok" style="color: #6c1cce;"></i>
+                <span class="tooltip">Tik Tok</span>
+            </a>
+            <a href="https://www.facebook.com/laverdino/" class="icon">
+                <i class="fa-brands fa-facebook" style="color: #005eff;"></i>
+                <span class="tooltip">Facebook</span>
+            </a>
+            <a href="https://www.twitch.tv/la_laveer" class="icon">
+                <i class="fa-brands fa-twitch" style="color: #ff00ae;"></i>
+                <span class="tooltip">Twitch</span>
+            </a>
+            <a href="https://kick.com/la-laveer" class="icon">
+                <i class="fa-brands fa-kickstarter" style="color: #18cc00;"></i>
+                <span class="tooltip">Kick</span>
+            </a>
+            <a href="https://wa.me/5493364600919" class="icon">
+                <i class="fa-brands fa-whatsapp" style="color: #00ff9d;"></i>
+                <span class="tooltip">WhatsApp</span>
+            </a>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
