@@ -64,13 +64,10 @@ document.addEventListener('DOMContentLoaded', function() {
 // PAGINA LAMBO
 // script.js
 
-document.querySelectorAll('.image-toggle-btn').forEach(button => {
-    button.addEventListener('click', () => {
-        const img = button.parentElement.querySelector('img.timeline-image');
-        if (img) {
-            img.style.display = img.style.display === 'none' ? 'inline-block' : 'none';
-        } else {
-            console.error("No se encontró la imagen para el botón");
-        }
-    });
-});
+function toggleImage(button) {
+    const image = button.nextElementSibling;
+    if (image) {
+        image.classList.toggle('hidden');
+    }
+}
+
