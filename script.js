@@ -71,3 +71,24 @@ function toggleImage(button) {
     }
 }
 
+// PAGINA MERCH
+// script.js
+//onclick="toggleImage(this)"
+
+// PAGINA FORD
+let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel-item');
+const totalSlides = slides.length;
+
+document.querySelector('.next-ford').addEventListener('click', () => {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % totalSlides;
+    slides[currentSlide].classList.add('active');
+});
+
+document.querySelector('prev-ford').addEventListener('click', () => {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide - 1) % totalSlides;
+    slides[currentSlide].classList.add('active');
+});
+

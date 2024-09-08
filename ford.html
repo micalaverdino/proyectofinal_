@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/styles.css" />
     <script src="script.js"></script>
 </head>
-<body>
+<body class="body-ford">
   <!--Barra de navegacion-->
   <header>
     <nav class="navbar">
@@ -40,75 +40,104 @@
         <button class="login-btn">INGRESAR</button>
     </nav>
 </header>
+            <video autoplay muted loop id="video-background">
+                <source src="../videos/fondo-bg-ford-video.mp4" type="video/mp4">
+            </video>
     <main>
-        <img src="../img/logo-ford.png" alt="LOGO FORD">
+                <div class="content">
+        <img class="img-ford" src="../img/logo-ford.png" alt="LOGO FORD">
+            <span>
         <div class="div">LÍNEA DE TIEMPO</div>
-        <section class="section">
-            <article class="article">
-                <h2>CREACIÓN FORD MOTOR COMPANY (1903)</h2>
-                <p>En junio de 1903, Henry Ford y un grupo de colaboradores montaban en un pequeño garaje de Detroit el modelo A. Desde entonces, la firma lleva todo un siglo dedicada al mundo del automóvil.</p>
+            </span>
+        <div class="carousel-ford">
+            <div class="carousel-item active">
                 <img src="../img/logo-fordmotorco-1903.png" alt="LOGO FORD MOTOR COMPANY">
-            </article>
-            <article class="article">
-                <h2>PRIMER MODELO FORD T (1908)</h2>
-                <p>Ford introduce mundialmente el <strong>Modelo T</strong>.</p>
+            <div class="carousel-caption">
+                <h3>CREACIÓN FORD MOTOR COMPANY (1903)</h3>
+                <p>En junio de 1903, Henry Ford y un grupo de colaboradores montaban en un pequeño garaje de Detroit el modelo A. Desde entonces, la firma lleva todo un siglo dedicada al mundo del automóvil.</p>
+            </div>
+            </div>
+            <div class="carousel-item">
                 <img src="../img/ford-modeloT.jpg" alt="FORD T">
-            </article>
-            <article class="article">
-                <h2>ENSAMBLAJE EN HIGHLAND PARK (1913)</h2>
-                <p>Primera planta de ensamblaje en serie en <strong>Highland Park</strong>.</p>
+            <div class="carousel-caption">
+                <h3>PRIMER MODELO FORD T (1908)</h3>
+                <p>Ford introduce mundialmente el <strong>Modelo T</strong>.</p>
+            </div>
+            </div>
+            <div class="carousel-item">
                 <img src="../img/ford-ensamblaje-1913.jpg" alt="">
-            </article>
-            <article class="article">
-                <h2>LINCOLN CONTINENTAL (1939)</h2>
-                <p>Creación del <strong>Lincoln Continental</strong>.</p>
+            <div class="carousel-caption">
+                <h3>ENSAMBLAJE EN HIGHLAND PARK (1913)</h3>
+                <p>Primera planta de ensamblaje en serie en <strong>Highland Park</strong>.</p>
+            </div>
+            </div>
+            <div class="carousel-item">
                 <img src="../img/ford-lincolncontinental-1939.jpg" alt="LINCOLN CONTINENTAL">
-            </article>
-            <article class="article">
-                <h2>FORD THUNDERBIRD (1954)</h2>
+            <div class="carousel-caption">
+                <h3>LINCOLN CONTINENTAL (1939)</h3>
+                <p>Creación del <strong>Lincoln Continental</strong>.</p>
+            </div>
+            </div>
+                <div class="carousel-item">
+                    <img src="../img/ford-thunderbird-1954.jpeg" alt="FORD THUNDERBIRD">
+            <div class="carousel-caption">
+                <h3>FORD THUNDERBIRD (1954)</h3>
                 <p>Comercialización del <strong>Ford Thunderbird</strong>.</p>
-                <img src="../img/ford-thunderbird-1954.jpeg" alt="FORD THUNDERBIRD">
-            </article>
-            <article class="article">
-                <h2>FORD MUSTANG (1964)</h2>
-                <p>Comercialización del <strong>Ford Mustang</strong></p>
+            </div>
+            </div>
+                <div class="carousel-item">
                 <img src="../img/ford-mustang-1964.jpg" alt="FORD MUSTANG">
-            </article>
-            <article class="article">
-                <h2>PRIMER COCHE DE ALMUSSAFES (1976)</h2>
-                <p>Producción del primer coche en Almussafes (<strong>Ford Fiesta</strong>).</p>
+            <div class="carousel-caption">
+                <h3>FORD MUSTANG (1964)</h3>
+                <p>Comercialización del <strong>Ford Mustang</strong></p>
+            </div>
+            </div>
+            <div class="carousel-item">
                 <img src="../img/ford-fiesta-1976.jpeg" alt="FORD FIESTA">
-            </article>
-            <article class="article">
-                <h2>MODELO ESCORT (1981)</h2>
-                <p><strong>Ford T</strong> se fabria el Fiesta 1 millón en Almussafes. Se empieza a fabricar el modelo <i>Escort</i> en esta misma planta.</p>
+            <div class="carousel-caption">
+                <h3>PRIMER COCHE DE ALMUSSAFES (1976)</h3>
+                <p>Producción del primer coche en Almussafes (<strong>Ford Fiesta</strong>).</p>
+            </div>
+            </div>
+            <div class="carousel-item">
                 <img src="../img/ford-escort-1981.jpg" alt="FORD T">
-            </article>
-            <article class="article">
-                <h2>MAZDA MOTOR MANUFACTURING (1992)</h2>
-                <p>Ford entra en el capital de <strong>Mazda Motor Manufacturing</strong>.</p>
-            </article>
-            <article class="article">
-                <h2>MODELO FORD KA (1996)</h2>
-                <p>Comienzo de la producción del <strong>KA</strong> en Almussafes.</p>
+            <div class="carousel-caption">
+                <h3>MODELO ESCORT (1981)</h3>
+                <p><strong>Ford T</strong> se fabria el Fiesta 1 millón en Almussafes. Se empieza a fabricar el modelo <i>Escort</i> en esta misma planta.</p>
+            </div>
+            </div>
+            <div class="carousel-item">
                 <img src="../img/ford-ka-1996.jpeg" alt="FORD KA">
-            </article>
-            <article class="article">
-                <h2>LAND ROVER (2000)</h2>
-                <p>Compra de <strong>Land Rover</strong> a <i>BMW</i>.</p>
+            <div class="carousel-caption">
+                <h3>MODELO FORD KA (1996)</h3>
+                <p>Comienzo de la producción del <strong>KA</strong> en Almussafes.</p>
+            </div>
+            </div>
+            <div class="carousel-item">
                 <img src="../img/ford-landrover.jpg" alt="">
-            </article>
-            <article class="article">
-                <h2>MAZDA 2 (2003)</h2>
-                <p>Se inicia en Almussafes la fabricación del <strong>Mazda2</strong></p>
+            <div class="carousel-caption">
+                <h3>LAND ROVER (2000)</h3>
+                <p>Compra de <strong>Land Rover</strong> a <i>BMW</i>.</p>
+            </div>
+            </div>
+            <div class="carousel-item">
                 <img src="../img/ford-mazda2.jpeg" alt="MAZDA 2">
-            </article>
-            <article class="article">
-                <h2>CENTENARIO (2003)</h2>
-                <p>Ford Motor Company celebra su centenario.</p>
+            <div class="carousel-caption">
+                <h3>MAZDA 2 (2003)</h3>
+                <p>Se inicia en Almussafes la fabricación del <strong>Mazda2</strong></p>
+            </div>
+            </div>
+            <div class="carousel-item">
                 <img src="../img/ford-centenario.jpg" alt="">
-            </article>
-    </section>
+            <div class="carousel-caption">
+                <h3>CENTENARIO (2003)</h3>
+                <p>Ford Motor Company celebra su centenario.</p>
+            </div>
+            </div>
+                <button class="prev-ford">Anterior</button>
+                <button class="next-ford">Siguiente</button>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="social-icon">
