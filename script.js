@@ -92,3 +92,16 @@ document.querySelector('prev-ford').addEventListener('click', () => {
     slides[currentSlide].classList.add('active');
 });
 
+// PAGINA INDEX
+
+document.addEventListener('DOMContentLoaded', function() {
+    //elemento para alternar formularios
+    const signupLink = document.getElementById('bottom-link');
+    const formPopup = document.querySelector('.form-popup');
+
+    //cuando se haga click en el enlace "registrarme"
+    signupLink.addEventListener('click', function(e) {
+        e.preventDefault(); 
+        formPopup.classList.add('show-signup'); //muestra el formulario
+    });
+});

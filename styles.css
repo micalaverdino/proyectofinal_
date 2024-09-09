@@ -1,7 +1,7 @@
 /*PAGINA INDEX*/
 /*Importar google font
 @import url("https://fonts.google.com/specimen/Open+Sans/tester?query=open+sans&icon.style=Rounded");
-**/
+*
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@
 body{
     display: flex;
     width: 100%;
-    height: 100vh;
+    min-height: 100%;
     margin: 0;
     padding: 0;
     background-image: url("../img/fondo-index2.jpg");
@@ -57,7 +57,7 @@ header{
     font-size: 1.7rem;
     font-weight: 600;
     color: #e8e8e8;
-}
+}*/
 
 .navbar .links{
     display: flex;
@@ -72,7 +72,7 @@ header{
     position: absolute;
     right: 20px;
     top: 20px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .navbar .links a{
@@ -159,16 +159,24 @@ header{
     display: flex;
 }
 
-.form-box .form-details{
+.form-box1{
+    display: none;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+
+.form-box1 .form-details{
     max-width: 330px;
     width: 100%;
     color: #ffffffcc;
-    display: flex;
+    display: none;
     padding: 0 20px;
     text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 25px;
 }
 
 .login .form-details{
@@ -177,15 +185,21 @@ header{
     background-position: center;
 }
 
-.signup .form-details{
+.form-box1 .form-details{
     background: url("../img/fondo-form1.jpg");
     background-size: cover;
     background-position: center;
 }
 
-.form-box h2{
+.form-box .form-h2{
     text-align: center;
     margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.602);
+}
+
+.form-title{
+    color: rgba(255, 255, 255, 0.602);
+    text-align: center;
 }
 
 .form-box .form-content{
@@ -234,16 +248,16 @@ form .input-field label{
     transform: translateY(-120%);
 }
 
-.form-box a{
+.form-box1 a{
     color: rgb(20, 24, 246);
     text-decoration: none;
 }
 
-.form-box a:hover{
+.form-box1 a:hover{
     text-decoration: underline;
 }
 
-.form-box :where(.forgot-pass, .policy-text){
+.form-box1 :where(.forgot-pass, .policy-text){
     display: inline-flex;
     margin-top: 14px;
     font-size: 0.95rem;
@@ -264,7 +278,7 @@ form button{
     transition: 0.2s ease;
 }
 
-.form-box .forgot-pass{
+.form-box1 .forgot-pass{
     display: inline-flex;
     margin-top: 14px;
     font-size: 0.95rem;
@@ -274,7 +288,7 @@ form button{
     background: rgb(162, 31, 52);
 }
 
-.form-box .bottom-link{
+.form-box1 .bottom-link{
     text-align: center;
 }
 
@@ -344,10 +358,10 @@ form button{
     .form-popup{
         width: 95%;
     }
-    .form-box .form-details{
+    .form-box1 .form-details{
         display: none;
     }
-    .form-box .form-content{
+    .form-box1 .form-content{
         padding: 30px 20px;
     }
 }
@@ -585,7 +599,7 @@ form button{
 }
 body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: url("../img/fondo-index2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -635,7 +649,7 @@ header {
 }
 
 .navbar .links a:hover {
-    color: #00000085;
+    color: #e21212e3;
 }
 
 .logo{
@@ -1020,6 +1034,7 @@ header {
     background: url("../img/fondo-merch-store.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: auto;
 }
 
 nav{
@@ -1029,7 +1044,7 @@ nav{
 }
 
 nav a{
-    color: #151515d4;
+    color: #101010d4;
     margin: 0 15px;
     text-decoration: none;
     font-size: 1.5rem;
@@ -1047,7 +1062,6 @@ nav a:hover{
     font-size: 2rem;
     color: #000000;
     text-align: center;
-    grid-column: 1 / -1;
     padding: 20px;
 }
 
@@ -1056,7 +1070,6 @@ nav a:hover{
     background-size: cover;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3);
     gap: 50px;
     background-color: rgba(255, 255, 255, 0.3);
     padding: 20px;
@@ -1282,12 +1295,13 @@ footer{
     text-align: center;
     color: white;
     min-height: 100px;
+    z-index: - 1;
 }
 
 .social-icon{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
 }
 
 .icon{
